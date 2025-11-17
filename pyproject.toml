@@ -1,7 +1,7 @@
 [project]
 name = "torch_repr_shape"
-version = "0.0.1"
-description = "Add your description here"
+version = "0.0.2"
+description = "Patch torch.Tensor.__repr__ to include tensor shape."
 readme = "README.md"
 requires-python = ">=3.8"
 dependencies = []
@@ -32,10 +32,12 @@ default-groups = ["dev"]
 
 [dependency-groups]
 dev = [
-    "numpy>=2.3.5",
+    "build>=1.2.2.post1",
+    "numpy",
     "rainzl>=0.0.1",
-    "setuptools>=80.9.0",
-    "torch>=2.9.1",
+    "setuptools",
+    "torch",
+    "twine>=6.1.0",
 ]
 
 
